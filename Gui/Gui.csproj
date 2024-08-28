@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Database\Infrastructure.csproj" />
-    <ProjectReference Include="..\TestCli\TestCli.csproj" />
   </ItemGroup>
 
 </Project>
