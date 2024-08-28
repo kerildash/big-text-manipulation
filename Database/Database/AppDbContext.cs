@@ -17,7 +17,7 @@ public class AppDbContext : DbContext
 
 	{
 
-		optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-LBS7186\SQLEXPRESS;Initial Catalog=textdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
+		optionsBuilder.UseSqlServer(ConfigurationManager.AppSettings["DefaultConnection"]);
 
 	}
 
